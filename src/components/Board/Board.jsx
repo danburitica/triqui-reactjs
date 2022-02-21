@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import styles from "./Board.module.css";
 import Square from "../Square/Square";
 
 export default function Board({ squares, turn, winnerPositions, onClick }) {
@@ -15,10 +15,10 @@ export default function Board({ squares, turn, winnerPositions, onClick }) {
     ));
 
   return (
-    <Container>
-      <Row>{renderSquare([0, 1, 2])}</Row>
-      <Row>{renderSquare([3, 4, 5])}</Row>
-      <Row>{renderSquare([6, 7, 8])}</Row>
-    </Container>
+    <div className={styles.board}>
+      <div className={styles.row}>{renderSquare([0, 1, 2])}</div>
+      <div className={styles.row}>{renderSquare([3, 4, 5])}</div>
+      <div className={styles.row}>{renderSquare([6, 7, 8])}</div>
+    </div>
   );
 }

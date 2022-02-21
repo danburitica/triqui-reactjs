@@ -1,11 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Pompiere&display=swap");
+@import "bootstrap/dist/css/bootstrap.min.css";
 
-body {
+* {
   margin: 0;
-}
-
-.mainContainer {
-  height: 100vh;
-  background-color: #000;
-  font-family: "Pompiere";
+  font-family: "Courier New", Courier, monospace;
 }

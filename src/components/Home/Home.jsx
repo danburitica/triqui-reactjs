@@ -1,4 +1,3 @@
-import { Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import styles from "./Home.module.css";
 
@@ -10,7 +9,7 @@ export default function Home() {
   };
 
   return (
-    <Container>
+    <div className={styles.container}>
       <h1 className={styles.titleHome}>Bienvenidos</h1>
       <p className={styles.infoText}>
         El triqui, también conocido como ceros y cruces, tres en raya, cerito
@@ -26,6 +25,6 @@ export default function Home() {
       <button className={styles.btnPlay} onClick={onClick}>
         JUGAR
       </button>
-    </Container>
+    </div>
   );
 }

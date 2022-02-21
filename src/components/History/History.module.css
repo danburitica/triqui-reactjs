@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: center;
+  padding: calc(1rem + 1.5vw);
+}
+
+.historyTable {
+  width: 90%;
+}
+
+.historyTable th {
+  text-align: center;
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+.historyTable td {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+.spinner {
+  width: calc(3rem + 1.5vw);
+  height: calc(3rem + 1.5vw);
+  position: absolute;
+  top: calc(50% - 1.5rem);
+}

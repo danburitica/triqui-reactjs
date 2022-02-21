@@ -1,27 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: calc(3rem + 1.5vw);
+}
+
 .titleHome {
-  font-size: 5rem;
+  font-size: calc(2rem + 1.75vw);
+  font-weight: bold;
   color: #fff;
   text-align: center;
-  margin-top: 5rem;
 }
 
 .infoText {
-  font-size: 2rem;
+  font-size: calc(0.5rem + 1.5vw);
   color: #fff;
   text-align: center;
+  margin-top: 1.5rem;
 }
 
 .warningText {
-  font-size: 3rem;
+  font-size: calc(0.5rem + 1.5vw);
+  font-weight: 600;
   color: #5800ff;
   text-align: center;
 }
 
 .btnPlay {
-  width: 10rem;
-  padding: 1rem;
-  font-size: 2rem;
+  width: 15rem;
+  padding: 0.5rem;
+  font-size: calc(0.5rem + 1.5vw);
   background-color: #ffc600;
-  margin: 0 auto;
+  border-radius: 15px;
+  margin: 1.5rem auto 0;
   display: block;
 }

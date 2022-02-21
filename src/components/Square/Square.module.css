@@ -3,7 +3,7 @@
   height: 5em;
   background-color: #ffc600;
   border: none;
-  margin-bottom: 1em;
+  margin: calc(0.25rem + 0.25vw);
   font-size: 1rem;
 }
 

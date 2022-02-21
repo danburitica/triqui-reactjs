@@ -1,6 +1,5 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import Board from "../Board/Board";
@@ -192,49 +191,47 @@ export default function Game() {
   };
 
   return (
-    <Container>
-      <Row>
-        <Col>
-          {currentGame.date === null ? (
-            <h1 className={styles.newGame}>Empezando el Juego...</h1>
-          ) : (
-            <>
-              <h1 className={styles.namePlayer}>
-                Jugador 1:{" "}
-                <span className={styles.namePlayerSpan}>
-                  {currentGame.playerOne.name}
-                </span>
-              </h1>
-              <h1 className={styles.namePlayer}>
-                Jugador 2:{" "}
-                <span className={styles.namePlayerSpan}>
-                  {currentGame.playerTwo.name}
-                </span>
-              </h1>
-              <h1 className={styles.turn}>
-                Turno Actual:{" "}
-                <span className={styles.turnSpan}>
-                  {turn === "x"
-                    ? `${
-                        currentGame.playerOne.name
-                      } (${currentGame.playerOne.symbol.toUpperCase()})`
-                    : `${
-                        currentGame.playerTwo.name
-                      } (${currentGame.playerTwo.symbol.toUpperCase()})`}
-                </span>
-              </h1>
-            </>
-          )}
-        </Col>
-        <Col>
-          <Board
-            squares={squares}
-            turn={turn}
-            winnerPositions={winnerPositions}
-            onClick={onClick}
-          />
-        </Col>
-      </Row>
-    </Container>
+    <div className={styles.container}>
+      <div>
+        {currentGame.date === null ? (
+          <h1 className={styles.newGame}>Esperando Jugadores</h1>
+        ) : (
+          <>
+            <h1 className={styles.namePlayer}>
+              Jugador 1:{" "}
+              <span className={styles.namePlayerSpan}>
+                {currentGame.playerOne.name}
+              </span>
+            </h1>
+            <h1 className={styles.namePlayer}>
+              Jugador 2:{" "}
+              <span className={styles.namePlayerSpan}>
+                {currentGame.playerTwo.name}
+              </span>
+            </h1>
+            <h1 className={styles.turn}>
+              Turno Actual:{" "}
+              <span className={styles.turnSpan}>
+                {turn === "x"
+                  ? `${
+                      currentGame.playerOne.name
+                    } (${currentGame.playerOne.symbol.toUpperCase()})`
+                  : `${
+                      currentGame.playerTwo.name
+                    } (${currentGame.playerTwo.symbol.toUpperCase()})`}
+              </span>
+            </h1>
+          </>
+        )}
+      </div>
+      <div>
+        <Board
+          squares={squares}
+          turn={turn}
+          winnerPositions={winnerPositions}
+          onClick={onClick}
+        />
+      </div>
+    </div>
   );
 }

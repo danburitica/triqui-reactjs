@@ -11,7 +11,7 @@ export default function NavbarTriqui() {
         className={styles.colorNav}
         variant="dark"
       >
-        <Container>
+        <div className={styles.container}>
           <Navbar.Brand href="/">
             <img
               alt=""
@@ -24,7 +24,7 @@ export default function NavbarTriqui() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ms-auto">
+            <Nav activeKey={window.location.pathname} className="ms-auto">
               <Nav.Link className={styles.itemNavbar} href="/">
                 Inicio
               </Nav.Link>
@@ -33,7 +33,7 @@ export default function NavbarTriqui() {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-        </Container>
+        </div>
       </Navbar>
     </>
   );
