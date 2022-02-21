@@ -25,7 +25,7 @@ export default function Game() {
 
   const navigate = useNavigate();
   const API_URL =
-    process.env.REACT_APP_API_URL || "http://localhost:3001/api/games";
+    process.env.API_URL_DEPLOY || "http://localhost:3001/api/games";
 
   useEffect(() => {
     alertNewPlayer();

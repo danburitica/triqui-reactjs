@@ -5,7 +5,7 @@ import styles from "./History.module.css";
 
 export default function History() {
   const API_URL =
-    process.env.REACT_APP_API_URL || "http://localhost:3001/api/games";
+    process.env.API_URL_DEPLOY || "http://localhost:3001/api/games";
   const [games, setGames] = useState([]);
 
   useEffect(() => {
