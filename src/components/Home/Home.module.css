@@ -1,0 +1,27 @@
+.titleHome {
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.infoText {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.warningText {
+  font-size: 3rem;
+  color: #5800ff;
+  text-align: center;
+}
+
+.btnPlay {
+  width: 10rem;
+  padding: 1rem;
+  font-size: 2rem;
+  background-color: #ffc600;
+  margin: 0 auto;
+  display: block;
+}
