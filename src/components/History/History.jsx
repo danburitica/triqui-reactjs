@@ -4,7 +4,8 @@ import { Spinner, Table } from "react-bootstrap";
 import styles from "./History.module.css";
 
 export default function History() {
-  const API_URL = process.env.API_URL || "http://localhost:3001/api/games";
+  const API_URL =
+    process.env.REACT_APP_API_URL || "http://localhost:3001/api/games";
   const [games, setGames] = useState([]);
 
   useEffect(() => {
