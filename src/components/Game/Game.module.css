@@ -1,0 +1,16 @@
+.namePlayer,
+.turn {
+  color: #5800ff;
+  margin-bottom: 0.5em;
+}
+
+.namePlayerSpan,
+.turnSpan {
+  color: #fff;
+  margin-left: 0.5em;
+}
+
+.newGame {
+  color: #fff;
+  font-size: 4rem;
+}
