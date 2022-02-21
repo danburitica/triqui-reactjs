@@ -10,6 +10,7 @@
   color: #5800ff;
   margin: 0.5em;
   font-size: calc(1rem + 1.5vw);
+  text-align: center;
 }
 
 .namePlayerSpan,
