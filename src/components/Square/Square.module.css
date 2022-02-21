@@ -1,0 +1,30 @@
+.square {
+  width: 5em;
+  height: 5em;
+  background-color: #ffc600;
+  border: none;
+  margin-bottom: 1em;
+  font-size: 1rem;
+}
+
+.square img {
+  width: 40px;
+  height: 40px;
+}
+
+.winnerAnimation {
+  animation: winner 1s ease 0s infinite normal forwards;
+}
+
+@keyframes winner {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
